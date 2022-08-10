@@ -1,0 +1,35 @@
+Singleton: 
+	Một lớp mà chỉ một cá thể duy nhất có thể tồn tại
+	Bằng cách tạo một instance và sử dụng IIFE hoặc lưu vào cache property 
+	Ta có thể kiểm tra instance đã tồn tại hay chưa nếu đã tồn tại thì trả về instance đó cho người sử dụng nếu chưa thì tạo một instance mới
+Factory:
+	Tạo một phiên bản của một số lớp dẫn xuất
+	Thường thì để tạo ra một lớp thông qua constructor khá mệt phải import rồi sử dụng
+	Thay vì thế ta có thể tạo ra một Instance để nó tự động gọi đến các hàm tạo khác để đỡ mất công, dễ đọc hơn
+Obverse: 
+	Giống PugSub của subscription bên GraphQL một cách để thông báo thay đổi đối với một số lớp
+	Về cơ bản nó sẽ tạo ra một list và subscribe, unsubscribe các dữ liệu để quản lý
+Adapter:
+	Làm khớp các interfaces của các lớp khác nhau
+	Thường thì khi sửa một dự án có trước ta sẽ dùng pattern này sao cho code mới vẫn hoạt động một cách trơn tru với code cũ
+Template Method:
+	Thường dùng ở client nhiều hơn
+	Về cơ bản nó sẽ tạo ra một cái khung các bước, thuật toán rồi sau này ta sẽ thêm chi tiết vào sau
+Mediator:
+	Xác định phương thức giao tiếp đơn giản giữa các lớp
+	Tạo ra một nhóm đối tượng trong đó mỗi hoạt động của 1 đối tượng đều được biết bởi toàn bộ nhóm đối tượng
+Composite: 
+	Cấu trúc cây của các đối tượng đơn giản và hỗn hợp
+	Khá giống với một cây, một node có thể chứa một hoặc nhiều node con cùng loại và sẽ có 1 node là root
+Facade: 
+	Một lớp duy nhất đại diện cho toàn bộ hệ thống con
+	Bảo vệ máy khách khỏi chức năng phức tạp trong một hoặc nhiều hệ thống con
+	Khá giống với các middleware nó sẽ đi qua nhiều bước để kiểm tra xem có thể thực hiện tác vụ hay không
+Iterator: 
+	Truy cập tuần tự các phần tử của một tập hợp
+	Khá giống với danh sách liên kết đơn(singly linked list)
+Proxy: 
+	Một đối tượng đại diện cho một đối tượng khác
+	Khá giống với cache
+
+Link: https://www.dofactory.com/javascript/design-patterns/proxy
